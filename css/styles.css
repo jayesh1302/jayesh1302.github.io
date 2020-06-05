@@ -10265,6 +10265,7 @@ form .row:first-child .floating-label-form-group {
 .chatbot {
   position: fixed;
   bottom: 0;
+  z-index:999;
   right:0;
   -webkit-margin-bottom-collapse: inherit;
     padding: 0 18px;
