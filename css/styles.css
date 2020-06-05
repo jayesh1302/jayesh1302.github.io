@@ -10262,3 +10262,24 @@ form .row:first-child .floating-label-form-group {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
+.chatbot {
+  position: fixed;
+  bottom: 0;
+  right:0;
+  -webkit-margin-bottom-collapse: inherit;
+    padding: 0 18px;
+    
+    overflow: hidden;
+}
+
+.details,
+.show,
+.hide:target {
+  display: none;
+  color:black;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
+  color:black;
+}
