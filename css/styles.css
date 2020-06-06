@@ -10284,3 +10284,11 @@ form .row:first-child .floating-label-form-group {
   display: block;
   color:black;
 }
+.mychatbot{
+  background-color: #212529;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
