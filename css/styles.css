@@ -10265,12 +10265,11 @@ form .row:first-child .floating-label-form-group {
 .chatbot {
   position: fixed;
   bottom: 0;
-  z-index:999;
+  z-index: 999;
   right:0;
   -webkit-margin-bottom-collapse: inherit;
-    padding: 0 18px;
-    
-    overflow: hidden;
+  padding: 0 18px;
+  overflow: hidden;
 }
 
 .details,
@@ -10278,12 +10277,16 @@ form .row:first-child .floating-label-form-group {
 .hide:target {
   display: none;
   color:black;
+  
+  
 }
 .hide:target + .show,
 .hide:target ~ .details {
   display: block;
   color:black;
+  
 }
+
 .mychatbot{
   background-color: #212529;
   color: white;
