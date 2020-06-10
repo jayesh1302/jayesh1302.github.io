@@ -10296,3 +10296,7 @@ form .row:first-child .floating-label-form-group {
   text-decoration: none;
   display: inline-block;
 }
+a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+}
