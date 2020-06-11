@@ -10300,3 +10300,10 @@ a[target="_blank"]:after {
     font-family: 'FontAwesome';
     content: " \f08e";
 }
+.centerimgart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
