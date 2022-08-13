@@ -1,781 +1,871 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
-<head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.85, shrink-to-fit=no" />
-    <meta name="description" content="Jayesh Kumar" />
-    <meta name="author" content="Jayesh Kumar" />
+<head>
 
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Jayesh Kumar">
-    <meta name="image" property="og:image" content="https://i.ibb.co/H4DjJHg/jkk.jpg">
-    <meta property="og:description"
-        content="Jayesh Kumar is a Software Developer by Profession. Check out his website for more information.">
-    <meta property="og:url" content="https://jayesh1302.github.io">
-    <meta property="og:type" content="website" />
-
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Jayesh Kumar</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170787163-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        gtag('config', 'UA-170787163-1');
-    </script>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">JAYESH KUMAR</a><button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">About Me</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#education">Education</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#experience">Experience</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#skills">Skills</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#contact">Contact me</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="articles.html" target="_blank">Blogs</a></li>
-                    <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="personalprojects.html" target="_blank">Projects</a></li> -->
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Highlights</a></li>
+                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                    <li><a class="smoothscroll" href="#contact">Hire Me</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Jayesh Kumar.</h1>
+
+                    <h3>
+                        I'm a <span> graduate student </span> at New York University, studying MS in <span>Computer
+                            Engineering</span>. I am a <span>Software Developer</span>
+                        and
+                        I'm passionate about building products that serve good to society! <br />
+                        <i><a class="smoothscroll" href="#about">Start scrolling</a>
+                            and learn more <a class="smoothscroll" href="#about">about me</a>.</i>
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://www.facebook.com/jayesh1302/" target="_blank"><i class="fab fa-facebook-square"
+                                aria-hidden="true"></i></a>
+                        <!-- <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
+                        <!-- <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a> -->
+                        <!-- <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a> -->
+                        <!-- <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a> -->
+                        <a href="https://www.linkedin.com/in/jayesh1302/"><i class="fab fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                        <path
+                            d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/Jayesh.jpg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    I am a passionate software engineer, web developer, and a committed graduate student.
+                    I have 2.5 years of experience in the airline IT industry as a Software Development Engineer. I have
+                    worked with C++, Java, Angular and Python. I have integrated APIs, microservices, and complex C++
+                    backends with different UI's in Angular and Java, to build airline scheduling products which serve
+                    millions of people every second! I have prior experience in Data Analytics using Python, building
+                    chatbots, and research projects. I thrive in challenging environments which push me to perform
+                    better and
+                    better everyday!
+
+                </p>
+
+                <hr>
+
+                <!-- <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+
+                        <p>
+                            Jayesh Kumar <br>
+                            Graduate Student <br>
+                            New York University <br>
+                            Brooklyn, NY 11201 United States <br>
+                            <a href="tel:+1975432345">+197 543 2345</a> <br>
+                            <a href="mailto:#0">jayesh.kumar@nyu.edu</a>
+                        </p>
+                    </div> -->
+
+                    <!-- <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                                <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                            </svg>
+                            Download CV
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">New York University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master's in Computer Engineering</span>
+                            <span class="resume-block__header-date">
+                                August 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Graduate student at Tandon School of Engineering, New York University, pursuing Master's in
+                        Computer Engieering. My intended coursework includes Data Structures and Algorithms, Computer Systems Architecture, Internet
+                        Architecture Protocols, Cloud Computing, Machine Learning, among others.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Manipal Institute of Technology</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelors in Technology, Electronics and Communication Engineering | Karnataka, India
+                            </span>
+                            <span class="resume-block__header-date">
+                                2016-2020
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Graduated with Bachelors in Technology with a minor in Business Management.
+                        I honed my foundations in Computer Engineering at Manipal Institute of Technology while studying
+                        subjects such as Data Structures and Algorithms, Database Management System, Computer
+                        Organization and Architecture,
+                        Microcontrollers, Communication Network, Problem Solving using Computers (C++), Digital System
+                        Design.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Amadeus Labs</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Development Engineer | Bangalore, India</span>
+                            <span class="resume-block__header-date">
+                                August 2019 - August 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Worked with the R&D team for Airline Schedules as part of the Amadeus' flagship Altea Inventory
+                        Product.
+                        Developed solutions for airlines worldwide, building schedule and inventory
+                        products using C++ and Java. 
+                        <!-- To know more about my professional projects <i><a>request access to my resume</a>!</i> -->
+                    </p>
+                    <p class="resume-block__header-meta">
+                        <span>Software Engineering Intern | Bangalore, India</span>
+                        <span class="resume-block__header-date">
+                            January 2020 - May 2020
+                        </span>
+                    </p>
+
+                    <p>
+                        Developed a proof of concept for an operational scheduling product used by hundreds of Ground
+                        Handlers and airlines.
+                        Migrated the product to use Angular and Python, increasing user experience, customizability,
+                        reducing developmental effort and time to market.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ernst & Young LLP</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Data Analytics Intern | Bangalore, India</span>
+                            <span class="resume-block__header-date">
+                                June 2019 - July 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Created a Proof of concept by performing 'Market Basket Analysis on Python', also known as
+                        Association-Rule mining, on a dataset with 21,000 entries to extract customer purchase trends
+                        with confidence>50%, support value>1% and lift value > 1.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Research</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Inter University Accelerator Centre</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Research Intern | New Delhi, India</span>
+                            <span class="resume-block__header-date">
+                                May 2018 - June 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Assisted Dr. Joby Antony (former visiting scientist, CERN Geneva) at the Cryogenics Lab.
+                        Researched on a network of 200+ sensors for data redundancy, data packet loss and retransmission
+                        causing delay.
+                        Proposed improvements and received special recognition from the mentor for key inferences drawn
+                        leading to drastic
+                        improvement in the network.
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <!-- <p>
+                        Text if needed in Skills tab
+                    </p> -->
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                            <div class="progress percent95"></div>
+                            <strong>C++</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent80"></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent80"></div>
+                            <strong>HTML</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>CSS</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>Angular</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Git</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Unix/Linux</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h4>Honors and Awards</h4>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item" style="background-color: #e6e8e8;">
+                <div class="modal-popup__desc" style="padding: 20px;">
+                    <h5 style="text-align: center;">High Flyer Award</h5>
+                    <p style="font-size: 15px; text-align:center;"><i>"Awarded at Amadeus Labs, Bangalore for making a
+                            reasonable
+                            impact to the department over a quarter. This award recognizes exemplary showcase of
+                            behaviours like- Technical Competency,
+                            Analytical Skills, People Development skills, Problem Solving Skills, Domain Competency,
+                            and Domain/Product knowledge"
+                        </i></p>
+                </div>
+            </div> <!-- end award-item -->
+
+            <div class="column folio-item" style="background-color: #e6e8e8;">
+                <div class="modal-popup__desc" style="padding: 20px;">
+                    <h5 style="text-align: center;">Hackathon Top 10 Finalist</h5>
+                    <p style="font-size: 15px; text-align:center;">
+                        <i>"Ranked among top 10 out of 275 submissions in Futurize Hackathon 2020 at Amadeus Labs,
+                            Bangalore.
+                            Brainstormed, developed and implemented the idea for proposing cloud compatible solutions to
+                            transform
+                            airline scheduling via REST services."
+                        </i>
+                    </p>
+                </div>
+            </div> <!-- end award-item -->
+
+            <div class="column folio-item" style="background-color: #e6e8e8;">
+                <div class="modal-popup__desc" style="padding: 20px;">
+                    <h5 style="text-align: center;">Hackathon Top 3</h5>
+                    <p style="font-size: 15px; text-align:center;">
+                        <i>"Adjudged among the top 3 teams at SKube Hackathon 2021 held at Amadeus Labs among teams
+                            participating from all over the globe, with the aim to build nex-gen cloud-compatible
+                            microservices for airline offer products."
+                        </i>
+                    </p>
+                </div>
+            </div> <!-- end award-item -->
+
+            <div class="column folio-item" style="background-color: #e6e8e8;">
+                <div class="modal-popup__desc" style="padding: 20px;">
+                    <h5 style="text-align: center;">MIT Football League Winner</h5>
+                    <p style="font-size: 15px; text-align:center;">
+                        <i>"Stood first among 8 teams in a knockout soccer tournament at Manipal Institute of
+                            Technology, Karnataka, playing as a goalkeeper."
+                        </i>
+                    </p>
+                </div>
+            </div> <!-- end award-item -->
+
+        </div> <!-- end folio-list -->
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h4>A Few Of My Latest Projects</h4>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item" style="padding: 10px;">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/gallery/g-Placement_Bot.png" alt="Placement Bot">
+                </a>
+                <p>Placement Bot</p>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item" style="padding: 10px;">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/gallery/g-App_store.png" alt="App store data analysis">
+                </a>
+                <p>Analyzing App Store Data for building profitable apps</p>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item" style="padding: 10px;">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/gallery/g-Hacker_News.png" alt="Hacker News">
+                </a>
+                <p>Analyzing Hacker News posts</p>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item" style="padding: 10px;">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/gallery/g-Certifications.png" alt="Certifications">
+                </a>
+                <p>Online Certification courses</p>
+            </div> <!-- end folio-item -->
+
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/Placement_Bot.jpeg" alt="" />
+
+                <div class="modal-popup__desc">
+                    <h5>
+                        Placement Bot: A one stop guide for on-campus placements</h5>
+                    <p>Founder and Developer. <br />
+                        Jayesh envisioned and developed the Placement Bot, with the motive to help out engineering
+                        students prepare for placements. It is a chatbot that provides personalised and user-centric
+                        guidance. <br />
+
+                        Jayesh managed the chatbot end-to-end, developing, planning, managing SEO as well as marketing
+                        it across the student community. It gathered more than 2500 users in the first month.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Chatbot</li>
+                        <li>Engineering</li>
+                        <li>Placements</li>
+                    </ul>
+                </div>
+
+                <a href="https://placementbot20.github.io/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/App_store.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                    <h5>Analyzing App store data for building profitable apps</h5>
+                    <p>Analysing Datasets for profitability and User Activity using Python
+                        <br>Analyzed dataset of 17,000 applications on Google Play Store and Apple App store using
+                        Python,
+                        post data cleaning and
+                        categorization to extract trends for building profitable apps by genre
+                    </p>
+                    <ul class="modal-popup__cat">
+                        <li>Python</li>
+                        <li>Data Analytics</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/jayesh1302/appstore_data" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/Hacker_News.jpeg" alt="" />
+
+                <div class="modal-popup__desc">
+                    <h5>
+                        Analyzing Hacker News posts</h5>
+                    <p>Filtered and generated insights on a dataset containing 300,000 rows using Python, to skim for
+                        trending posts segregating
+                        them based on interactions, votes, time and comment activity received on posts published on
+                        Hacker News. </p>
+                    <ul class="modal-popup__cat">
+                        <li>Python</li>
+                        <li>Data Analytics</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/jayesh1302/hackernewspost" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/Certifications.jpg" alt="Certification" />
+
+                <div class="modal-popup__desc">
+                    <h5>Online Certification Courses</h5>
+                    <p>
+                        <a href="http://ude.my/UC-VK2WEFP0">Python for Data Science and Machine Learning Bootcamp
+                            (Udemy)</a><br>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/7NMABVABRK7W">Machine Learning
+                            (Coursera)</a><br>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/JGVPV2A894JV">SQL for Data
+                            Science (Coursera)</a><br>
+                        <a href="https://app.dataquest.io/view_cert/JADX7MWHGTWBY91GDKQV/">Python for Data Science:
+                            Intermediate (Dataquest.io)</a><br>
+
+                    </p>
+                    <ul class="modal-popup__cat">
+                        <li>Online Certifications, Education</li>
+                    </ul>
+                </div>
+
+                <a href="" class="modal-popup__details" class="disabled">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+
+    <!-- CTA
+    ================================================== -->
+    <section class="s-cta">
+
+        <div class="row">
+            <div class="column">
+                <h3 class="h2 section-desc">
+                    Need a passionate Software Engineer?
+                </h3>
+            </div>
+        </div>
+        <!-- end heading-block -->
+
+        <div class="row cta-content">
+            <div class="column">
+                <p>
+                    I have worked in fast-paced corporate environments, built robust, scalable, and secure products used
+                    by hundreds of clients.
+                    Get in touch with me if you feel I'm a right fit for your organization.
+                </p>
+                <a href="mailto:jayesh.kumar@nyu.edu" class="mailtoui btn btn--primary h-full-width">Hire Me!</a>
+            </div>
+        </div>
+        <!-- end cta-content -->
+
+    </section>
+    <!-- end s-cta -->
+
+
+    <!-- testimonials
+    ================================================== -->
+    <section id="testimonials" class="s-testimonials target-section">
+
+        <div class="s-testimonials__bg"></div>
+
+        <div class="row s-testimonials__header">
+            <div class="column large-12">
+                <h3>Hear What My Colleagues Think!</h3>
+            </div>
+        </div>
+
+        <div class="row s-testimonials__content">
+
+            <div class="column">
+
+                <div class="swiper-container testimonial-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Sudharsan B.</strong>
+                                    <span>Lead Business Analyst, Product Owner at Amadeus Labs</span>
+                                    <span>(2022)</span>
+
+                                </cite>
+                            </div>
+                            <p>
+                                "Jayesh joined Amadeus in the year 2020 as Software Engineer. He made an impressive
+                                entry
+                                through an Internship project that aimed at revamping a tool that is widely being used
+                                by Ground Handlers to newer tech stacks such as Angular and Python...Since then he has
+                                been a key member in Inventory Schedules Team in Amadeus..
+                                He grasped the concepts quickly and started contributing very well..He is extremely
+                                talented and technically very strong. He is well organized. His approach to investigate
+                                complex issues and document the learnings have always been well received by the team and
+                                the management. More importantly he is always approachable...His ability to comprehend
+                                and present complex technical details in simple terms is highly commendable. He is a
+                                great asset to any team he joins...Wishing Jayesh all success in all his endeavours."
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Abhi Mahajan</strong>
+                                    <span>Senior Technical Business Analyst, Amadeus R&D Americas Offer</span>
+                                    <span>(2022)</span>
+
+                                </cite>
+                            </div>
+                            <p>
+                                "With great pleasure, i am writing this recommendation for Jayesh.
+                                He joined the Schedules team in Amadeus as a Software Developer following a successful
+                                internship and fresh out of college. It was astonishing to see someone so young display
+                                great levels of commitment and accountability.
+
+                                Jayesh has very profound technical skills and a thinker's mind who looks towards moving
+                                task at hand to completion independently with comprehensive communication with all the
+                                stakeholders. He loves taking challenges and being part of complex discussions and adapt
+                                quickly as per the need.
+                                His presence in the room adds a lot of calmness and content. He is a cheerful person who
+                                is also a great mentor to his juniors and has good leadership skills as well.
+                                I wish him abundance of success and luck for all his future roles and aspirations.
+                                Cheers Jayesh!!""
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Utkarsh Agarwal</strong>
+                                    <span>(2022)</span>
+
+                                    <span>Senior Software Developer, Amadeus Labs</span>
+                                </cite>
+                            </div>
+                            <p>
+                                "I worked with Jayesh in the schedules team in Amadeus. He has excellent problem solving
+                                and coding skills. He is also a great team player and is able to seamlessly collaborate
+                                both within the team and with other teams as well. His contributions to both feature
+                                development and maintenance are greatly appreciated by the team. I would whole-heartedly
+                                recommend him for any software engineering roles."
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Dipen Gupta</strong>
+                                    <span>Quality Assurance Engineer, Amadeus Labs</span>
+                                    <span>(2022)</span>
+
+                                </cite>
+                            </div>
+                            <p>
+                                "Jayesh is a very hardworking and smart team member whom I got to know over the course
+                                of his internship and his first year at Amadeus. I had helped with the functional
+                                aspects of his team onboarding, and the pace with which he was able to understand and
+                                later pick up tasks was commendable. He will surely be a great asset to any team that he
+                                joins!"
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Sumegh Singhania</strong>
+                                    <span>(2021)</span>
+
+                                    <span>Senior Software Engineer, Amadeus Labs</span>
+                                </cite>
+                            </div>
+                            <p>
+                                "I have worked with Jayesh for over a year at Amadeus Software Labs, Bangalore. Jayesh
+                                is a very quick learner who is always looking out for new learnings and
+                                responsibilities. He is not afraid to take up new challenges and is always able to find
+                                a way through these challenges. It has been a great experience to work with him and I
+                                recommend him for all future opportunities that come his way."
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Balkirat Jeet Singh</strong>
+                                    <span>Senior Development Manager, Amadeus Labs</span>
+                                    <span>(2020)</span>
+
+                                </cite>
+                            </div>
+                            <p>
+                                "Many Thanks Jayesh for your excellent commitment during the internship. The demo was
+                                "fantastic" and we achieved what we targeted. All the best for your vacation. Enjoy and
+                                see you back soon!"
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                    </div> <!-- end testimonial slider swiper-wrapper -->
+
+                    <div class="swiper-pagination"></div>
+
+                </div> <!-- end swiper-container -->
+                <div class="column w-2000-stack">
+                    <a href="https://www.linkedin.com/in/jayesh1302/" target="_blank" class="btn btn--download">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                            <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                        </svg>
+                        View Recommendations on LinkedIn
+                    </a>
+                </div>
+            </div> <!-- end column -->
+
+        </div> <!-- end row -->
+
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h5 class="huge-text">
+                    Looking for a passionate Software Engineer? Have a new project in mind? Let's collaborate and build something awesome.
+                    Let's turn that idea to an even greater product :)
+                </h5>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:jayesh.kumar@nyu.edu">jayesh.kumar@nyu.edu</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <!-- <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+1975432345">+197 543 2345</a>
+                            </p>
+                        </div>  -->
+                        <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:jayesh.kumar@nyu.edu" class="mailtoui btn btn--primary h-full-width">Let's
+                            Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://www.facebook.com/jayesh1302/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li> -->
+                    <!-- <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li> -->
+                    <!-- <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/jayesh1302/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/Jayesh.jpg">
-            <!-- Masthead Heading--></br>
-            <h1 class="masthead-heading text-uppercase mb-0">JAYESH KUMAR</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Software Engineer</p>
-            <p class="masthead-subheading font-weight-light mb-0">(Last updated July 2021)</p>
-        </div>
-    </header>
-    <!-- About Section-->
-    <section class="page-section portfolio" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">Currently, I am working as a Software Engineer at Amadeus Labs, Bangalore. I
-                        graduated from Manipal Insititute of Technology, Karnataka, India in 2020. I did my
-                        undergraduate degree in Electronics and Communication Engineering with a minor in Business
-                        Management.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">Apart from my coursework, I also have keen interest in the field of Data Science
-                        and Machine Learning. I have worked on varied personal projects ranging from Web Development,
-                        Data Analytics,Building Chatbots, Network Analysis and IoT.</p>
-                </div>
-            </div></br>
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead"><br><br>During my school days, I represented my school football team, and in college
-                        I took part in MIT Football League for two consecutive years. My team stood first in the league
-                        in 2017</p>
-                </div>
-                <div class="col-lg-4 mr-auto"><img class="img-fluid" src="assets/img/football.jpg" alt="image"
-                        width="1000px" height="450px"></div>
-            </div></br>
-            <div class="row">
-                <div class="col-lg-4 ml-auto"><img class="img-fluid" src="assets/img/nyc.jpg" alt="image" width="1000px"
-                        height="300px"><br></div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">My hobbies include travel and photography, playing football and drawing. I have
-                        professionally completed 5+ years as an art student at the School of Performing and Fine Arts,
-                        Delhi. You can check out my <a
-                            href="https://instagram.com/unplanned.adventures?igshid=u11duhgqbp82">Travel Blog</a> on
-                        Instagram for more photos that I have clicked. </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead"><br><br>I also enjoy performing stand-up comedy occasionaly, and have performed for
-                        a couple of stand-up shows in college events and elsewhere.</p>
-                </div>
-                <div class="col-lg-4 mr-auto"><br><br><img class="img-fluid" src="img/standup.jpg" alt="image"
-                        width="1100px" height="550px"></div>
-            </div></br>
-            <!-- About Section Button-->
-            <!--                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-primary" href="https://drive.google.com/file/d/1WnPJCKyoCan_MagMHQhlLregVdnpekh5/view?usp=drivesdk"><i class="fas fa-download mr-2"></i>Download Resume</a>
-                </div> -->
-        </div>
-    </section>
-    <!-- Education Section-->
-    <section class="page-section bg-primary text-white mb-0" id="education">
-        <div class="container">
-            <!-- Education Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Education</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Education Section Content-->
-            <div class="row ml-auto">
-                <h2 class="portfolio-modal-title text-secondary123 text-uppercase mb-0 text-white"
-                    style="color: white;">MANIPAL INSTITUTE OF TECHNOLOGY, MANIPAL</h2>
-                <p class="lead">B.Tech, Electronics and Communication Engineering — 2016-2020</p>
-            </div><br>
-            <div class="row ml-auto">
-                <h2 class="portfolio-modal-title text-secondary123 text-uppercase mb-0" style="color: white;">DELHI
-                    PUBLIC SCHOOL, VASANT KUNJ, NEW DELHI</h2>
-                <br />
-                <p class="lead">Class XII and Class X CBSE - 2002-2015</p>
-            </div></br>
-        </div>
-    </section>
-    </div>
-    <!-- Experience Section-->
-    <section class="page-section portfolio" id="experience">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Experience</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row">
 
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/amadeuslogo.jpg" alt="" /><br></br>
-                        <p class="lead">Jan 2020-Present</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/EYlogo.png" alt="" /><br></br>
-                        <p class="lead">June 2019 - July 2019 </p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/download.jpg" alt="" /><br></br>
-                        <p class="lead">May 2018 - July 2018 </p>
-                    </div>
-                </div>
-                <div class="mx-auto">
-
-                    <div class="col">
-                        <p class="lead123"><i>Click for more info!</i></p>
-                    </div>
-                </div>
-    </section>
-    <!-- About Section-->
-    <section class="page-section portfolio" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase">Recommendations</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <!-- <div class="row">
-                <div class="col-lg-6 ml-auto">
-                    <p class="lead">"I have worked with Jayesh for over a year at Amadeus Software Labs, Bangalore.
-                        Jayesh is a very quick learner who is always looking out for new learnings and responsibilities.
-                        He is not afraid to take up new challenges and is always able to find a way through these
-                        challenges. It has been a great experience to work with him and I recommend him for all future
-                        opportunities that come his way. <br><strong><i>- Sumegh Singhania</i></strong>
-                    <p style="font-size: 1.2em;">Senior Software Engineer at Amadeus Labs. July 2, 2021</p>
-                    </p>
-                </div>
-                <div class="col-lg-6 ml-auto">
-                    <p class="lead">"Many Thanks Jayesh for your excellent commitment during the internship. The demo
-                        was "fantastic" and we achieved what we targeted. All the best for your vacation. Enjoy and see
-                        you back soon!" <br><strong><i>- Balkirat Jeet Singh</i></strong>
-                    <p style="font-size: 1.2em;">Senior Development Manager at Amadeus Labs. May 29, 2020</p>
-                    </p>
-                </div>
-            </div>
-            <div class="mx-auto">
-                <div class="col" style="text-align: center;">
-                    <p class="lead123"><i></i><a class="btn" href="https://www.linkedin.com/in/jayesh1302/"
-                            style="font-size: 1em;"><i>Click to view Recommendations on LinkedIn.</i></a></p>
-                </div>
-            </div>
-            </br>
-        </div> -->
-    </section>
-    <style>
-        * {
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: Verdana, sans-serif;
-            margin: 0
-        }
-
-        .mySlides {
-            display: none
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-
-            .prev,
-            .next,
-            .text {
-                font-size: 11px
-            }
-        }
-    </style>
-    <div class="slideshow-container">
-
-        <div class="mySlides">
-            <div class="numbertext">1 / 3</div>
-            <div class="col-lg-11 ml-auto">
-                <p class="lead">"I have worked with Jayesh for over a year at Amadeus Software Labs, Bangalore. Jayesh
-                    is a very quick learner who is always looking out for new learnings and responsibilities. He is not
-                    afraid to take up new challenges and is always able to find a way through these challenges. It has
-                    been a great experience to work with him and I recommend him for all future opportunities that come
-                    his way. <br><strong><i>- Sumegh Singhania</i></strong>
-                <p style="font-size: 1.2em;">Senior Software Engineer at Amadeus Labs. July 2, 2021</p>
-                </p>
-            </div>
-
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">2 / 3</div>
-            <div class="col-lg-11 ml-auto">
-                    <p class="lead">"Many Thanks Jayesh for your excellent commitment during the internship. The demo
-                        was "fantastic" and we achieved what we targeted. All the best for your vacation. Enjoy and see
-                        you back soon!" <br><strong><i>- Balkirat Jeet Singh</i></strong>
-                    <p style="font-size: 1.2em;">Senior Development Manager at Amadeus Labs. May 29, 2020</p>
-                    </p>
-                </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-    <div class="mx-auto">
-        <div class="col" style="text-align: center;">
-            <p class="lead123"><i></i><a class="btn" href="https://www.linkedin.com/in/jayesh1302/"
-                    style="font-size: 1em;" target="_blank"><i>Click to view Recommendations on LinkedIn.</i></a></p>
-        </div>
-    </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <!-- Skills Section-->
-    <section class="page-section bg-primary text-white mb-0" id="skills">
-        <div class="container">
-            <!-- Skills Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Skills and Coursework</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Skills Section Content-->
-            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline dev-icons">
-
-                <li class="list-inline-item">
-                    <i class="fab fa-angular"></i>
-                </li>
-                <li class="list-inline-item">
-                    <span class="iconify" data-icon="simple-icons:typescript"></span>
-                </li>
-                <li class="list-inline-item">
-                    <i class="fab fa-npm"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class='fab fa-python'></i>
-                </li>
-
-                <li class="list-inline-item">
-                    <i class="fab fa-html5"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class="fab fa-css3-alt"></i>
-                </li>
-                <div class="subheading mb-3">Relevant Coursework</div>
-                <li class="list-inline">
-                    <p class="lead123">CSE 3281 Database Management System, ECE 3106 Computer Organization and
-                        Architecture, ECE 3105 Communication Networks, ECE 3102 Microcontrollers, ECE 2105 Logic Design,
-                        ECE 2204 Digital System Design Using Verilog, HUM 4011 Financial Management, HUM 4014 Operations
-                        and System Management, HUM 4013 Marketing Management</p>
-                </li>
-                <div class="subheading mb-3">Certification courses</div>
-                <li class="list-inline">
-                    <p class="lead123"><a class="btn btn-primary" href="http://ude.my/UC-VK2WEFP0">
-                            <font size="4.5px">Python for Data Science and Machine Learning Bootcamp (Udemy) ,</font>
-                        </a>
-                        <a class="btn btn-primary"
-                            href="https://www.coursera.org/account/accomplishments/verify/7NMABVABRK7W">
-                            <font size="4.5px">Machine Learning (Coursera) ,</font>
-                        </a>
-                        <a class="btn btn-primary"
-                            href="https://www.coursera.org/account/accomplishments/certificate/JGVPV2A894JV">
-                            <font size="4.5px">SQL for Data Science (Coursera) ,</font>
-                        </a>
-                        <a class="btn btn-primary" href="https://app.dataquest.io/view_cert/JADX7MWHGTWBY91GDKQV/">
-                            <font size="4.5px">Python for Data Science: Intermediate (Dataquest.io)</font>
-                        </a>
-                    </p>
-                </li>
-            </ul>
-            <div class="ml-auto">
-
-                <div class="col">
-                    <p class="lead123"><i>Click to view certifications!</i></p>
-                </div>
-
-            </div>
-    </section>
-
-
-
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row">
-                <!-- Footer Social Icons-->
-
-                <h4 class="text-uppercase mb-4">Reach out to me!</h4>
-
-            </div>
-            <div class="row">
-                <a class="btn btn-outline-dark btn-social123 mx-1 " href="https://www.linkedin.com/in/jayesh1302/"><i
-                        class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-dark btn-social123 mx-1 " href="https://facebook.com/jayesh1302"><i
-                        class="fab fa-fw fa-facebook"></i></a>
-                <a class="btn btn-outline-dark btn-social123 mx-1"
-                    href="https://instagram.com/unplanned.adventures?igshid=u11duhgqbp82"><i
-                        class="fab fa-fw fa-instagram"></i></a>
-                <a class="btn btn-outline-dark btn-social123 mx-1" href="https://twitter.com/jayesh1302?s=09"><i
-                        class="fab fa-fw fa-twitter"></i></a>
-                <a class="btn btn-outline-dark btn-social123 mx-1" href="https://github.com/jayesh1302"><i
-                        class="fab fa-fw fa-github"></i></a>
-                        
-            </div></br></br>
-            
-
-            <!-- <div class="chatbot" >  
-                    <details>
-                <iframe
-                allow="microphone;"
-                allowfullscreen
-                width="400"
-                height="430"
-                src="https://console.dialogflow.com/api-client/demo/embedded/jkbot">
-            </iframe></details>
-        </div> -->
-
-            <div class="chatbot">
-                <div>
-                    <a id="hide1" href="#hide1" class="hidechatjk">
-                        <font color="black"><b><span class="mychatbot">+ JKBot</span></b></font>
-                    </a>
-                    <a id="show1" href="#show1" class="showchatjk"><i style="font-size:24px" class="fa"
-                            color="black">&#xf00d;</i>
-                        <font color="black"><b>Close</b> </font>
-                    </a>
-                    <div class="details">
-                        <iframe allow="microphone;" allowfullscreen width="400" height="430"
-                            src="https://console.dialogflow.com/api-client/demo/embedded/jkbot">
-                        </iframe>
-                    </div>
-                </div>
-
-                <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-                <df-messenger
-                    chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;7e95d422-b519-4ad6-a4d8-ce0d9aff5727_x.png"
-                    intent="WELCOME" chat-title="JKBot" agent-id="b0ed188c-c4f7-427f-8072-d051f8ec0ce5"
-                    language-code="en"></df-messenger>
-            </div> -->
-
-
-    </section>
-
-    <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">Vasant Kunj<br />New Delhi, Delhi, India 110070</p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jayesh1302/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1"
-                        href="https://github.com/jayesh1302"><i class="fab fa-fw fa-dribbble"></i></a>
-                </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Contact</h4>
-                    <p class="lead mb-0">jayesh1302@gmail.com</p>
-                </div>
-
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
             </div>
         </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+                </svg>
+            </a>
+        </div> <!-- end ss-go-top -->
     </footer>
-    <!-- Copyright Section-->
-    <section class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © </small></div>
-    </section>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Software Developer
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/amadeuslogo.jpg" alt="" /><!-- Portfolio Modal - Text-->
-                                <p class="lead">Currently working at Amadeus, the leading travel technology company in
-                                    the world, as a Software Developer. Proficient in C++, python. Worked on Web
-                                    developement projects in html, css, javascript and have worked with frameworks such
-                                    as Angular. Currently working with C++ backends and picking up on Cloud
-                                    technologies. </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Data Analytics
-                                    Intern</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/EYlogo.png" alt="" /><!-- Portfolio Modal - Text-->
-                                <p class="lead">Work on Python libraries like NumPy, Pandas, Seaborn, Matplotlib and
-                                    Scikit-Learn. Worked with various Machine Learning algorithms deployed on different
-                                    datasets. Conducted ‘Market Basket Analysis’ using Python.
-                                </p>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Research Intern
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/download.jpg" alt="" /><!-- Portfolio Modal - Text-->
-                                <p class="lead">Worked under Mr. Joby Antony (Formerly Visiting Scientist, CERN,
-                                    Geneva), currently in charge: Electronics for Cryogenics, IUAC.</p>
-                                <p class="lead">Projects:</p>
-                                <p>
-                                    • Computer Network Analysis using Wireshark:
-                                    Worked thoroughly with the intrinsic network of the organization to analyze the
-                                    network for data redundancy, data packet loss and retransmission of data causing
-                                    delay and, hence suggesting beneficial improvements
-                                </p>
-                                <p>
-                                    • IoT: Connecting sensors to IBM BlueMix cloud:
-                                    Used IoT platform by IBM BlueMix cloud to monitor sensor readings through a using
-                                    Python using a custom ARM MBED Microcontroller. The
-                                    data could be monitored from anywhere in the world using the idea of Internet of
-                                    Things (IoT)
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
-    <!-- Core theme JS-->
-    <script src="./js/"></script>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
