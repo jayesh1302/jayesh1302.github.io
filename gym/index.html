@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lift Recap</title>
+  <meta name="description" content="Turns your Apple Watch strength workout into an approximate list of exercises, sets and coaching notes.">
+  <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Lift Recap">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h3l2-5 4 10 2-5h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Lift Recap</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-view="recap" aria-selected="true">Recap</button>
+      <button role="tab" data-view="history">History</button>
+      <button role="tab" data-view="setup">Setup</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section id="view-recap" class="view"></section>
+    <section id="view-history" class="view" hidden></section>
+    <section id="view-setup" class="view" hidden></section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <datalist id="exercise-list"></datalist>
+
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
