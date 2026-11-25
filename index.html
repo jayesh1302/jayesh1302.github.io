@@ -1,955 +1,317 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!doctype html>
+<html lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Jayesh Kumar</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/vendor.css">
-
-    <!-- script
-    ================================================== -->
-    <script defer src="js/vendor/fontawesome/all.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170787163-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-170787163-1');
-    </script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jayesh Kumar · Software Engineer building AI</title>
+<meta name="description" content="Jayesh Kumar is a software engineer at Intuit building AI agents, LLM evaluation systems and the infrastructure that makes AI reliable. 6+ years in distributed systems.">
+<meta name="author" content="Jayesh Kumar">
+<meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0c10" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Jayesh">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jayesh1302.github.io/">
+<meta property="og:title" content="Jayesh Kumar · Software Engineer building AI">
+<meta property="og:description" content="Building AI agents, LLM evals and AI infrastructure at Intuit. Previously Southwest Airlines and Amadeus.">
+<meta property="og:image" content="https://jayesh1302.github.io/assets/site/avatar.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://jayesh1302.github.io/">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site/styles.css">
+<script>
+  // set theme before paint to avoid flash
+  (function(){var t=null;try{t=localStorage.getItem('theme')}catch(e){}
+  document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jayesh Kumar","jobTitle":"Software Engineer","worksFor":{"@type":"Organization","name":"Intuit"},
+"alumniOf":[{"@type":"CollegeOrUniversity","name":"New York University"},{"@type":"CollegeOrUniversity","name":"Manipal Institute of Technology"}],
+"url":"https://jayesh1302.github.io/","sameAs":["https://www.linkedin.com/in/jayesh1302/","https://github.com/jayesh1302"]}
+</script>
 </head>
+<body>
+<div class="bg" aria-hidden="true"></div><div class="orb" aria-hidden="true"></div><div class="glow" id="glow" aria-hidden="true"></div>
 
-<body id="top" class="ss-preload">
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a href="#home" class="brand" aria-label="Jayesh Kumar, home">
+      <img src="assets/site/avatar.webp" alt="" width="32" height="32">
+      <span>Jayesh Kumar<small>Building AI @ Intuit</small></span>
+    </a>
+    <nav class="nav mono" aria-label="Primary">
+      <a href="#focus">Focus</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="icon-btn" id="theme" aria-label="Toggle dark mode">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
 
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader"></div>
+<main>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-top reveal">
+        <div class="avatar"><img src="assets/site/avatar.webp" alt="Jayesh Kumar" width="72" height="72"></div>
+        <span class="pill mono"><span class="dot"></span>Software Engineer @ Intuit</span>
+      </div>
+      <h1 class="reveal">Jayesh<br>Kumar<span class="accent">.</span></h1>
+      <p class="headline reveal">Software engineer building <em>AI agents</em> that actually work.</p>
+      <p class="typed-line mono reveal">&gt; <span class="typed" id="typed">LLM evals &amp; benchmarks</span><span class="caret"></span></p>
+      <p class="lede reveal">6+ years building distributed systems for 140M+ users. Now I build agents, evals and the infrastructure that makes AI reliable in production.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="#work">See my work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#contact">Let's talk</a>
+      </div>
     </div>
 
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-        <div class="row s-header__nav-wrap">
-            <nav class="s-header__nav">
-                <ul>
-                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
-                    <li><a class="smoothscroll" href="#about">About</a></li>
-                    <li><a class="smoothscroll" href="#resume">Career</a></li>
-                    <li><a class="smoothscroll" href="#portfolio">Achievements</a></li>
-                    <li><a class="smoothscroll" href="#projects">Projects</a></li>
-                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-                    <li><a class="smoothscroll" href="#contact">Hire Me</a></li>
-                </ul>
-            </nav>
-        </div> <!-- end row -->
-
-        <a class="s-header__menu-toggle" href="#0" title="Menu">
-            <span class="s-header__menu-icon"></span>
-        </a>
-    </header> <!-- end s-header -->
-
-
-    <!-- hero
-    ================================================== -->
-    <section id="hero" class="s-hero target-section">
-
-        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
-
-        <div class="row s-hero__content">
-            <div class="column">
-
-                <div class="s-hero__content-about">
-
-                    <h1>I'm Jayesh Kumar.</h1>
-
-                    <h3>
-                        I'm a <span> Software Engineer </span> with a Master's in <span>Computer
-                            Engineering</span> from New York University.
-                        I am passionate about <span>building tech</span> that improves the life of people at scale!
-                        <br /><br />
-
-                        <!-- Google Calendar Appointment Scheduling begin -->
-                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-                        <script>
-                        (function() {
-                          var target = document.currentScript;
-                          window.addEventListener('load', function() {
-                            calendar.schedulingButton.load({
-                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1jO_bc-DgXRsJYmozhhwTjnwJSpgg8NFhqRV-vYosPcSZowPcxQF2ybjuOe0_1MJssNh_9XeFW?gv=true',
-                              color: '#039BE5',
-                              label: 'Book an appointment',
-                              target,
-                            });
-                          });
-                        })();
-                        </script>
-                        <!-- end Google Calendar Appointment Scheduling -->
-                        <br /><br />
-                        <i><a class="smoothscroll" href="#about">Start scrolling</a>
-                            and learn more <a class="smoothscroll" href="#about">about me</a>.</i>
-                    </h3>
-
-                    <div class="s-hero__content-social">
-                        <a href="https://www.facebook.com/jayesh1302/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="https://github.com/jayesh1302" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/unplanned.adventures/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/jayesh1302/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    </div>
-
-                </div> <!-- end s-hero__content-about -->
-
-            </div>
-        </div> <!-- s-hero__content -->
-
-        <div class="s-hero__scroll">
-            <a href="#about" class="s-hero__scroll-link smoothscroll">
-                <span class="scroll-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
-                        <path
-                            d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z">
-                        </path>
-                    </svg>
-                </span>
-                <span class="scroll-text">Scroll Down</span>
-            </a>
-        </div> <!-- s-hero__scroll -->
-
-    </section> <!-- end s-hero -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="row">
-            <div class="column large-3 tab-12">
-                <img class="s-about__pic" src="images/avatars/Jayesh_Profile.jpg" alt="">
-            </div>
-            <div class="column large-9 tab-12 s-about__content">
-                <h3>About Me</h3>
-                <p>
-                    I’m a Software Engineer with 3+ years of experience and a Master’s in Computer Engineering from NYU.
-                    My expertise lies in building scalable, distributed full-stack applications, with a strong focus on backend performance, microservices architecture, 
-                    and cloud computing with AWS.
-                    I have a proven track record of leading technology migrations, optimizing backend systems for scalability, 
-                    and collaborating with customer-facing teams to deliver impactful, revenue-driving innovations with experience working across global markets.
-                </p>
-
-                <hr>
-
-                <!-- <div class="row s-about__content-bottom">
-                    <div class="column w-1000-stack">
-                        <h3>Contact Details</h3>
-
-                        <p>
-                            Jayesh Kumar <br>
-                            Graduate Student <br>
-                            New York University <br>
-                            Brooklyn, NY 11201 United States <br>
-                            <a href="tel:+1975432345">+197 543 2345</a> <br>
-                            <a href="mailto:#0">jayesh.kumar@nyu.edu</a>
-                        </p>
-                    </div> 
-
-                <div class="column w-1000-stack">
-                        <a href="#0" class="btn btn--download">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
-                                <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
-                                <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
-                            </svg>
-                            Download CV
-                        </a>
-                    </div>
-            </div>
-        </div>
-        </div>  -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- resume
-    ================================================== -->
-    <section id="resume" class="s-resume target-section">
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Education</h3>
-            </div>
-            <div class="column large-9 tab-12">
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">New York University</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Master of Science in Computer Engineering</span>
-                            <span class="resume-block__header-date">
-                                Graduation: May 2024
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Graduate student at Tandon School of Engineering, New York University. <br />
-                        My coursework includes Data Structures and Algorithms, Cloud Computing, Machine Learning, Big Data, Intro to Java, Computer
-                        Systems Architecture, Computer Networking.
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Manipal Institute of Technology</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Bachelors in Technology, Computer Engineering | Karnataka, India
-                            </span>
-                            <span class="resume-block__header-date">
-                                Graduation: June 2020
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Graduated with Bachelors in Technology with a minor in Business Management.
-                        I honed my foundations in Computer Engineering at Manipal Institute of Technology while studying
-                        subjects such as Data Structures and Algorithms, Database Management System, Computer
-                        Organization and Architecture,
-                        Microcontrollers, Communication Network, Problem Solving using Computers (C++), Digital System
-                        Design.
-                    </p>
-
-                </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Career</h3>
-            </div>
-            <div class="column large-9 tab-12">
-                <div class="resume-block">
-                    <div class="resume-block">
-                    
-                    <div class="resume-block__header">
-                        <h4 class="h3">Southwest Airlines</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Software Engineer - Backend | New York, NY </span>
-                            <span class="resume-block__header-date">
-                                Aug 2024 - Present
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Building Southwest.com
-                    </p>
-                </div> <!-- end resume-block -->
-                    
-                     <div class="resume-block">
-                    
-                    <div class="resume-block__header">
-                        <h4 class="h3">Southwest Airlines</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Software Engineer Intern | Dallas, TX</span>
-                            <span class="resume-block__header-date">
-                                May 2023 - August 2023
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Worked with the Customer and Commercial Technology team on building features for the Southwest.com website.  
-                        Coded an accessible search enhancement on 4 pages of the Southwest.com website using React and Java currently in Production.
-                        <!-- To know more about my professional projects <i><a>request access to my resume</a>!</i> -->
-                    </p>
-                </div> <!-- end resume-block -->
-                    
-                    <div class="resume-block__header">
-                        <h4 class="h3">Amadeus Labs</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Software Engineer | Bangalore, India</span>
-                            <span class="resume-block__header-date">
-                                August 2020 - June 2022
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Worked with the R&D team for Airline Schedules as part of the Amadeus' flagship Altea Inventory
-                        Product.
-                        Developed solutions for airlines worldwide, building schedule and inventory
-                        products using C++ and Java.
-                        <!-- To know more about my professional projects <i><a>request access to my resume</a>!</i> -->
-                    </p>
-                    <p class="resume-block__header-meta">
-                        <span>Software Engineering Intern | Bangalore, India</span>
-                        <span class="resume-block__header-date">
-                            January 2020 - May 2020
-                        </span>
-                    </p>
-
-                    <p>
-                        Developed a proof of concept for an operational scheduling product used by hundreds of Ground
-                        Handlers and airlines.
-                        Migrated the product to use Angular and Python, increasing user experience, customizability,
-                        reducing developmental effort and time to market.
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Ernst & Young LLP</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Software Engineer Intern | Bangalore, India</span>
-                            <span class="resume-block__header-date">
-                                June 2019 - July 2019
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Created a Proof of concept by performing 'Market Basket Analysis on Python', also known as
-                        Association-Rule mining, on a dataset with 21,000 entries to extract customer purchase trends
-                        with confidence>50%, support value>1% and lift value > 1.
-                    </p>
-
-                </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Leadership Positions</h3>
-            </div>
-            <div class="column large-9 tab-12">
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Wasserman Center for Career Development, NYU</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Graduate Assistant, Career Coach</span>
-                            <span class="resume-block__header-date">
-                                September 2023 - Present
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Met with 20 students weekly, to provide resume reviwes, interview tips, technical preparation guidance, and networking tips to NYU students university wide.
-                        Hosted and delivered various panel sessions related to career development. 
-
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Google Developer Student Club, NYU</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Alumni Outreach</span>
-                            <span class="resume-block__header-date">
-                                September 2023 - Present
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        As part of the Google Developer Student Club, New York University Chapter, I am responsible for Alumni Outreach to organize events, workshops & mentorship programs focused on Software Engineering
-
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-            </div>
-        </div> <!-- s-resume__section -->
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Research</h3>
-            </div>
-            <div class="column large-9 tab-12">
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Metaverse for Education</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Student Research Project (NYU)</span>
-                            <span class="resume-block__header-date">
-                                January 2023 - May 2023
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Founded the AR team for a student-led research project aimed to develop a hybrid educational
-                        environment in the metaverse using Microsoft Hololens. I conceptualized the design, set up the initial steps 
-                        to integrate the environment with Microsoft Azure's Custom Vision Portal for object detection, 
-                        and trained and validated images of 3D objects to successfully. It was a wonderful experience from the future!
-
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">Inter University Accelerator Centre</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Research Intern | New Delhi, India</span>
-                            <span class="resume-block__header-date">
-                                May 2018 - June 2018
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                        Assisted Dr. Joby Antony (former visiting scientist, CERN Geneva) at the Cryogenics Lab.
-                        Researched on a network of 200+ sensors for data redundancy, data packet loss and retransmission
-                        causing delay.
-                        Proposed improvements and received special recognition from the mentor for key inferences drawn
-                        leading to drastic
-                        improvement in the network.
-
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-            </div>
-        </div> <!-- s-resume__section -->
-
-
-
-
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Skills</h3>
-            </div>
-            <div class="column large-9 tab-12">
-                <div class="resume-block">
-                    <p><strong>Languages:</strong> C, C++, Java, Python, JavaScript, TypeScript</p>
-                    <p><strong>Technologies:</strong> React, Angular, HTML/CSS, Kafka, git, Docker, Kubernetes, REST, AWS Services, OpenAI, Hadoop, Spark</p>
-                    <p><strong>Cloud Technologies:</strong> AWS Lambda, AWS OpenSearch, Rekognition, EKS, ECS (Fargate), SQS, SES, DynamoDB, Amazon EventBridge, API Gateway, S3, Amazon Lex, CodePipeline, CloudFormation (Infrastructure as code), Terraform, IAM, CloudWatch</p>
-                    <p><strong>Databases and OS:</strong> Windows, MacOS, Unix/Linux, ElasticSearch, MongoDB, PostgreSQL, DynamoDB, MySQL, NoSQL</p>
-                </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-        
-
-    </section> <!-- end s-resume -->
-
-
-    <!-- portfolio
-    ================================================== -->
-    <section id="portfolio" class="s-portfolio target-section">
-
-        <div class="row s-portfolio__header">
-            <div class="column large-12">
-                <h4>Honors and Awards</h4>
-            </div>
-        </div>
-
-        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
-
-            <div class="column folio-item" style="background-color: #e6e8e8;">
-                <div class="modal-popup__desc" style="padding: 20px;">
-                    <h5 style="text-align: center;">High Flyer Award</h5>
-                    <p style="font-size: 15px; text-align:center;"><i>"Awarded at Amadeus Labs, Bangalore for making a
-                            reasonable
-                            impact to the department over a quarter. This award recognizes exemplary showcase of
-                            behaviours like- Technical Competency,
-                            Analytical Skills, People Development skills, Problem Solving Skills, Domain Competency,
-                            and Domain/Product knowledge"
-                        </i></p>
-                </div>
-            </div> <!-- end award-item -->
-
-            <div class="column folio-item" style="background-color: #e6e8e8;">
-                <div class="modal-popup__desc" style="padding: 20px;">
-                    <h5 style="text-align: center;">Hackathon Top 10 Finalist</h5>
-                    <p style="font-size: 15px; text-align:center;">
-                        <i>"Ranked among top 10 out of 275 submissions in Futurize Hackathon 2020 at Amadeus Labs,
-                            Bangalore.
-                            Brainstormed, developed and implemented the idea for proposing cloud compatible solutions to
-                            transform
-                            airline scheduling via REST services."
-                        </i>
-                    </p>
-                </div>
-            </div> <!-- end award-item -->
-
-            <div class="column folio-item" style="background-color: #e6e8e8;">
-                <div class="modal-popup__desc" style="padding: 20px;">
-                    <h5 style="text-align: center;">Hackathon Top 3</h5>
-                    <p style="font-size: 15px; text-align:center;">
-                        <i>"Adjudged among the top 3 teams at SKube Hackathon 2021 held at Amadeus Labs among teams
-                            participating from all over the globe, with the aim to build nex-gen cloud-compatible
-                            microservices for airline offer products."
-                        </i>
-                    </p>
-                </div>
-            </div> <!-- end award-item -->
-
-            <div class="column folio-item" style="background-color: #e6e8e8;">
-                <div class="modal-popup__desc" style="padding: 20px;">
-                    <h5 style="text-align: center;">MIT Football League Winner</h5>
-                    <p style="font-size: 15px; text-align:center;">
-                        <i>"Stood first among 8 teams in a knockout soccer tournament at Manipal Institute of
-                            Technology, Karnataka, playing as a goalkeeper."
-                        </i>
-                    </p>
-                </div>
-            </div> <!-- end award-item -->
-
-        </div> <!-- end folio-list -->
-    </section>
-
-    <section id="projects" class="s-portfolio target-section">
-        <div class="row s-portfolio__header">
-            <div class="column large-12">
-                <h4>A Few Of My Latest Projects</h4>
-            </div>
-        </div>
-
-        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/ai-chatflow" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/ai-chatflow.png" alt="Smiley">
-                </a>
-                <p>AI ChatFlow- Messaging App using AWS</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/aws-ai-album" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-ai-photo-album.png" alt="Smiley">
-                </a>
-                <p>AI-powered Photo Album Web app on AWS</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/aws-concierge-bot" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-aws-concierge-bot.png" alt="Smiley">
-                </a>
-                <p>Dining Concierge - Chatbot using AWS</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/Big-Data-Project" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-brightstocks.jpg" alt="Smiley">
-                </a>
-                <p>BrightStocks - Stock Prediction using LSTM and Semantic Analysis</p>
-            </div> <!-- end folio-item -->
-            
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://devpost.com/software/smile-more" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-smiley.jpg" alt="Smiley">
-                </a>
-                <p>HackNYU - Smiley : Social Wellbeing App</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://placementbot20.github.io/" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-Placement_Bot.png" alt="Placement Bot">
-                </a>
-                <p>Placement Bot</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/appstore_data" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-App_store.png" alt="App store data analysis">
-                </a>
-                <p>Analyzing App Store Data for building profitable apps</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://github.com/jayesh1302/appstore_data" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-Hacker_News.png" alt="Hacker News">
-                </a>
-                <p>Analyzing Hacker News posts</p>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" style="padding: 10px;">
-                <a href="https://www.linkedin.com/in/jayesh1302/" target="_blank" class="folio-item__thumb">
-                    <img src="images/portfolio/gallery/g-Certifications.png" alt="Certifications">
-                </a>
-                <p>View Online Certifications on LinkedIn</p>
-            </div> <!-- end folio-item -->
-
-
-
-        </div> <!-- end folio-list -->
-
-
-        
-    </section> <!-- end s-portfolio -->
-
-
-    <!-- CTA
-    ================================================== -->
-    <section class="s-cta">
-
-        <div class="row">
-            <div class="column">
-                <h3 class="h2 section-desc">
-                    Need a passionate Software Engineer?
-                </h3>
-            </div>
-        </div>
-        <!-- end heading-block -->
-
-        <div class="row cta-content">
-            <div class="column">
-                <p>
-                    I have worked in fast-paced corporate environments, built robust, scalable, and secure products used
-                    by hundreds of clients.
-                    Get in touch with me if you feel I'm a right fit for your organization.
-                </p>
-                <a href="mailto:jayesh.kumar@nyu.edu" class="mailtoui btn btn--primary h-full-width">Hire Me!</a>
-            </div>
-        </div>
-        <!-- end cta-content -->
-
-    </section>
-    <!-- end s-cta -->
-
-
-    <!-- testimonials
-    ================================================== -->
-<section id="testimonials" class="s-testimonials target-section">
-
-        <div class="s-testimonials__bg"></div>
-
-        <div class="row s-testimonials__header">
-            <div class="column large-12">
-                <h3>Hear What My Colleagues Think!</h3>
-            </div>
-        </div>
-
-        <div class="row s-testimonials__content">
-
-            <div class="column">
-
-                <div class="swiper-container testimonial-slider">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>John McQueen</strong>
-                                    <span>Senior Software Engineer at Southwest Airlines</span>
-                                    <span>(2023)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "I had the pleasure of mentoring Jayesh through his summer internship. Jayesh is a hardworking, driven developer who is always learning. His growth over the summer was fun to watch!"
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-                    
-                    <div class="swiper-wrapper">
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Luiz Mattos</strong>
-                                    <span>Software Engineer at Southwest Airlines</span>
-                                    <span>(2023)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "I had the pleasure of working alongside Jayesh during his internship at Southwest. Jayesh is a hard worker, quick to learn, and always eager to help his teammates. Jayesh has a bright future ahead of him and I have no doubt he'll find great success."
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Raja Ram Shaw</strong>
-                                    <span>Senior Business Analyst + SAFe Scrum Master at Amadeus Labs</span>
-                                    <span>(2022)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "When I joined the team, Jayesh was an Intern, and since those days he had the ability
-                                to stand out. When I think of Jayesh the words that come to my mind are "Efficient",
-                                "Reliable" and "Innovative". He always looks forward to tackling new challenges with
-                                innovative ideas and out-of-the-box thinking. I was amazed not only by his technical but
-                                management skills as well, which he used to efficiently engage with all the
-                                stakeholders. He is an excellent team player, always available to support his team and I
-                                am very confident he will be a great addition to any team."
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Sudharsan B.</strong>
-                                    <span>Lead Business Analyst, Product Owner at Amadeus Labs</span>
-                                    <span>(2022)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "Jayesh joined Amadeus in the year 2020 as Software Engineer. He made an impressive
-                                entry
-                                through an Internship project that aimed at revamping a tool that is widely being used
-                                by Ground Handlers to newer tech stacks such as Angular and Python...Since then he has
-                                been a key member in Inventory Schedules Team in Amadeus..
-                                He grasped the concepts quickly and started contributing very well..He is extremely
-                                talented and technically very strong. He is well organized. His approach to investigate
-                                complex issues and document the learnings have always been well received by the team and
-                                the management. More importantly he is always approachable...His ability to comprehend
-                                and present complex technical details in simple terms is highly commendable. He is a
-                                great asset to any team he joins...Wishing Jayesh all success in all his endeavours."
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Abhi Mahajan</strong>
-                                    <span>Senior Technical Business Analyst, Amadeus R&D Americas Offer</span>
-                                    <span>(2022)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "With great pleasure, i am writing this recommendation for Jayesh.
-                                He joined the Schedules team in Amadeus as a Software Developer following a successful
-                                internship and fresh out of college. It was astonishing to see someone so young display
-                                great levels of commitment and accountability.
-
-                                Jayesh has very profound technical skills and a thinker's mind who looks towards moving
-                                task at hand to completion independently with comprehensive communication with all the
-                                stakeholders. He loves taking challenges and being part of complex discussions and adapt
-                                quickly as per the need.
-                                His presence in the room adds a lot of calmness and content. He is a cheerful person who
-                                is also a great mentor to his juniors and has good leadership skills as well.
-                                I wish him abundance of success and luck for all his future roles and aspirations.
-                                Cheers Jayesh!!""
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Utkarsh Agarwal</strong>
-                                    <span>(2022)</span>
-
-                                    <span>Senior Software Developer, Amadeus Labs</span>
-                                </cite>
-                            </div>
-                            <p>
-                                "I worked with Jayesh in the schedules team in Amadeus. He has excellent problem solving
-                                and coding skills. He is also a great team player and is able to seamlessly collaborate
-                                both within the team and with other teams as well. His contributions to both feature
-                                development and maintenance are greatly appreciated by the team. I would whole-heartedly
-                                recommend him for any software engineering roles."
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Dipen Gupta</strong>
-                                    <span>Quality Assurance Engineer, Amadeus Labs</span>
-                                    <span>(2022)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "Jayesh is a very hardworking and smart team member whom I got to know over the course
-                                of his internship and his first year at Amadeus. I had helped with the functional
-                                aspects of his team onboarding, and the pace with which he was able to understand and
-                                later pick up tasks was commendable. He will surely be a great asset to any team that he
-                                joins!"
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Sumegh Singhania</strong>
-                                    <span>(2021)</span>
-
-                                    <span>Senior Software Engineer, Amadeus Labs</span>
-                                </cite>
-                            </div>
-                            <p>
-                                "I have worked with Jayesh for over a year at Amadeus Software Labs, Bangalore. Jayesh
-                                is a very quick learner who is always looking out for new learnings and
-                                responsibilities. He is not afraid to take up new challenges and is always able to find
-                                a way through these challenges. It has been a great experience to work with him and I
-                                recommend him for all future opportunities that come his way."
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Balkirat Jeet Singh</strong>
-                                    <span>Senior Development Manager, Amadeus Labs</span>
-                                    <span>(2020)</span>
-
-                                </cite>
-                            </div>
-                            <p>
-                                "Many Thanks Jayesh for your excellent commitment during the internship. The demo was
-                                "fantastic" and we achieved what we targeted. All the best for your vacation. Enjoy and
-                                see you back soon!"
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                    </div> <!-- end testimonial slider swiper-wrapper -->
-
-                    <div class="swiper-pagination"></div>
-
-                </div> <!-- end swiper-container -->
-                <div class="column w-2000-stack">
-
-                    <a href="https://www.linkedin.com/in/jayesh1302/" target="_blank"
-                        class="btn btn--primary h-full-width">
-
-                        View Recommendations on LinkedIn
-                    </a>
-                </div>
-            </div> <!-- end column -->
-
-        </div> <!-- end row -->
-
-
-    </section> <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="row s-contact__header">
-            <div class="column large-12">
-                <h3 class="section-header-allcaps">Say Hello</h3>
-            </div>
-        </div>
-
-        <div class="row s-contact__content">
-
-            <div class="column large-7 medium-12">
-
-                <h5 class="huge-text">
-                    Looking for a passionate Software Engineer? Have a new project in mind? Let's collaborate and build
-                    something awesome.
-                    Let's turn that idea to an even greater product :)
-                </h5>
-
-            </div>
-
-            <div class="column large-4 medium-12">
-
-                <div class="row contact-infos">
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Email
-                            </h5>
-                            <p class="contact-block__content">
-                                <a class="mailtoui" href="mailto:jayesh.kumar@nyu.edu">jayesh.kumar@nyu.edu</a>
-                            </p>
-                        </div> <!-- end contact-block -->
-                    </div>
-                    <div class="column large-12 medium-6 tab-12">
-                        <!-- <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Phone
-                            </h5>
-                            <p class="contact-block__content">
-                                <a href="tel:+1975432345">+197 543 2345</a>
-                            </p>
-                        </div>  -->
-                        <!-- end contact-block -->
-                    </div>
-
-                    <div class="column large-12">
-                        <a href="mailto:jayesh.kumar@nyu.edu" class="mailtoui btn btn--primary h-full-width">Email
-                            Me</a>
-                        <a href="https://calendly.com/jayesh1302/bobatalk" class="btn btn--primary h-full-width"
-                            target="_blank">Meet Virtually</a>
-                    </div>
-                </div> <!-- end contact-infos -->
-
-            </div>
-        </div> <!-- s-contact__content -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
-        <div class="row">
-            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
-                <ul class="s-footer__social">
-                    <li><a href="https://www.facebook.com/jayesh1302/"><i class="fab fa-facebook-f"
-                                aria-hidden="true"></i></a></li>
-                    <!-- <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li> -->
-                    <!-- <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li> -->
-                    <!-- <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li> -->
-                    <li><a href="https://www.linkedin.com/in/jayesh1302/"><i class="fab fa-linkedin-in"
-                                aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
-                <span>© Copyright Ceevee 2021</span>
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>
-        </div>
-
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
-                </svg>
-            </a>
-        </div> <!-- end ss-go-top -->
-    </footer>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    <div class="trace reveal" aria-label="Animated example of an AI agent run being traced and evaluated" role="img">
+      <div class="trace-bar"><i></i><i></i><i></i><span class="mono">agent-trace · live</span></div>
+      <div class="trace-body mono" id="trace"></div>
+    </div>
+  </div>
+
+  <div class="stats reveal">
+    <div class="stat"><div class="n mono" data-count="6" data-suffix="+">6+</div><div class="l">years engineering</div></div>
+    <div class="stat"><div class="n mono" data-count="140" data-suffix="M+">140M+</div><div class="l">users on systems I've built</div></div>
+    <div class="stat"><div class="n mono" data-count="75" data-suffix="+">75+</div><div class="l">airline customers served</div></div>
+    <div class="stat"><div class="n mono" data-count="400" data-suffix="+">400+</div><div class="l">students mentored</div></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track mono" id="track">
+    <span>LLM Evals</span><span>AI Agents</span><span>Multi-agent Orchestration</span><span>Tool Calling</span><span>Langfuse</span><span>Python</span><span>Java</span><span>AWS</span><span>Distributed Systems</span><span>React</span><span>Observability</span>
+  </div>
+</div>
+
+<!-- ================= FOCUS ================= -->
+<section id="focus" class="wrap">
+  <div class="eyebrow mono reveal">01 · What I build</div>
+  <h2 class="reveal">AI that ships to production.</h2>
+  <p class="sub reveal">Strong software engineering, pointed at the hardest part of AI: making it measurable, reliable and fast.</p>
+  <div class="focus">
+    <article class="fcard reveal"><span class="bar"></span>
+      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+      <h3>LLM evals &amp; benchmarks</h3>
+      <p>Automated evaluation that scores agent quality, reliability and end-to-end task success, so every prompt, model and orchestration change is backed by data.</p>
+    </article>
+    <article class="fcard reveal"><span class="bar"></span>
+      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6.5 17M12 11.5l5.5 5.5"/></svg></div>
+      <h3>Multi-agent systems</h3>
+      <p>Orchestration, reasoning and tool-calling pipelines behind conversational AI, plus agent skills built on frontier LLMs.</p>
+    </article>
+    <article class="fcard reveal"><span class="bar"></span>
+      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg></div>
+      <h3>AI infrastructure</h3>
+      <p>Scalable, observable, low-latency backends for high-throughput inference, built with lessons from 140M-user airline systems.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="work" class="wrap">
+  <div class="eyebrow mono reveal">02 · Experience</div>
+  <h2 class="reveal">From backend to AI.</h2>
+  <p class="sub reveal">I spent years making distributed systems reliable. Now I do the same for AI.</p>
+  <div class="xp" id="xp">
+    <div class="xp-line"><div class="xp-fill" id="xpFill"></div></div>
+
+    <div class="job reveal">
+      <div class="when mono"><b>Jan 2026 · Now</b>San Diego, CA</div>
+      <div class="node"></div>
+      <div class="job-card">
+        <div class="jh"><div class="mark" style="background:#236cff">in</div>
+          <div><h3>Intuit <span class="ai-badge mono">AI</span></h3><div class="r">Software Engineer 2 · Intuit Intelligence</div></div>
+          <span class="now mono"><span class="dot"></span>Now</span></div>
+        <ul>
+          <li>Build automated <b>LLM evaluation &amp; benchmarking</b> systems that measure agent quality, reliability and end-to-end task success.</li>
+          <li>Design <b>multi-agent orchestration</b>, reasoning and tool-calling pipelines behind Intuit's AI chat experiences.</li>
+          <li>Ship production agent skills on <b>frontier LLMs</b>, backed by low-latency, observable inference services.</li>
+        </ul>
+        <div class="tags mono"><span class="tag">Python</span><span class="tag">LLM Evals</span><span class="tag">Multi-agent</span><span class="tag">Tool calling</span><span class="tag">Langfuse</span></div>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="when mono"><b>Jul 2024 · Jan 2026</b>Contract</div>
+      <div class="node"></div>
+      <div class="job-card">
+        <div class="jh"><div class="mark" style="background:#304cb2">SW</div>
+          <div><h3>Southwest Airlines <span class="ai-badge mono">AI</span></h3><div class="r">Software Engineer · AI &amp; Backend</div></div></div>
+        <ul>
+          <li>Built <b>internal AI agents</b> and AI-powered developer workflows across the SDLC, improving code generation and engineering productivity.</li>
+          <li>Drove adoption of <b>AI-assisted engineering</b>: evaluated emerging AI coding tools and set best practices across teams.</li>
+          <li>Led backend for <b>Priority Boarding &amp; Seats</b>, including serverless Python services for Southwest's first assigned-seating platform and seat payments.</li>
+        </ul>
+        <div class="tags mono"><span class="tag">AI Agents</span><span class="tag">Python</span><span class="tag">AWS Lambda</span><span class="tag">Java</span><span class="tag">Spring Boot</span></div>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="when mono"><b>May · Aug 2023</b>Dallas, TX</div>
+      <div class="node"></div>
+      <div class="job-card">
+        <div class="jh"><div class="mark" style="background:#304cb2">SW</div>
+          <div><h3>Southwest Airlines</h3><div class="r">Software Engineer Intern</div></div></div>
+        <ul><li>Shipped accessible search across <b>4 pages</b> of Southwest.com, now in production.</li></ul>
+        <div class="tags mono"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">Spring Boot</span></div>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="when mono"><b>2022 · 2024</b>New York, NY</div>
+      <div class="node"></div>
+      <div class="job-card">
+        <div class="jh"><div class="mark" style="background:#57068c">NYU</div>
+          <div><h3>New York University</h3><div class="r">MS Computer Engineering</div></div></div>
+        <ul>
+          <li>Focused on <b>machine learning</b>, cloud and big data. Built AI apps on AWS with Lex, Rekognition and OpenSearch.</li>
+          <li>Graduate career mentor at the Wasserman Center: coached <b>400+ students</b>.</li>
+        </ul>
+        <div class="tags mono"><span class="tag">ML</span><span class="tag">Cloud</span><span class="tag">Big Data</span></div>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="when mono"><b>Jan 2020 · Jun 2022</b>Bangalore, IN</div>
+      <div class="node"></div>
+      <div class="job-card">
+        <div class="jh"><div class="mark" style="background:#0b1a5c">A</div>
+          <div><h3>Amadeus</h3><div class="r">Software Engineer · Intern → Full-time</div></div></div>
+        <ul>
+          <li>Built <b>Python analytics</b> used by 75+ airline customers for data-driven decisions during large-scale disruptions.</li>
+          <li>Led development of a flagship <b>airline scheduling</b> platform in C++ and Java.</li>
+          <li>Modernized middleware and prototyped a monolith → microservices migration. <b>High Flyer Award</b>.</li>
+        </ul>
+        <div class="tags mono"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">REST</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="wrap">
+  <div class="eyebrow mono reveal">03 · Projects</div>
+  <h2 class="reveal">Things I've built.</h2>
+  <p class="sub reveal">AI and cloud side projects. <span class="mono" style="font-size:12px">Swipe →</span></p>
+  <div class="rail" id="rail">
+    <a class="card" href="https://github.com/jayesh1302/ai-chatflow" target="_blank" rel="noopener">
+      <div class="top mono">AI · 01<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>AI ChatFlow</h3><p>Serverless real-time messaging app with AI features, provisioned with Terraform on AWS.</p>
+      <div class="tags mono"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">AI</span></div>
+    </a>
+    <a class="card" href="https://github.com/jayesh1302/aws-ai-album" target="_blank" rel="noopener">
+      <div class="top mono">AI · 02<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>AI Photo Album</h3><p>Search your photos in natural language, using Rekognition auto-labels, Lex intent parsing and OpenSearch.</p>
+      <div class="tags mono"><span class="tag">Rekognition</span><span class="tag">Lex</span><span class="tag">OpenSearch</span></div>
+    </a>
+    <a class="card" href="https://github.com/jayesh1302/aws-concierge-bot" target="_blank" rel="noopener">
+      <div class="top mono">AI · 03<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>Dining Concierge Bot</h3><p>Conversational agent that collects preferences and sends restaurant picks via an event-driven pipeline.</p>
+      <div class="tags mono"><span class="tag">Lex</span><span class="tag">Lambda</span><span class="tag">SQS</span></div>
+    </a>
+    <a class="card" href="https://github.com/jayesh1302/Big-Data-Project" target="_blank" rel="noopener">
+      <div class="top mono">ML · 04<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>BrightStocks</h3><p>Stock prediction combining LSTM time-series models with news sentiment analysis.</p>
+      <div class="tags mono"><span class="tag">LSTM</span><span class="tag">NLP</span><span class="tag">Spark</span></div>
+    </a>
+    <a class="card" href="https://devpost.com/software/smile-more" target="_blank" rel="noopener">
+      <div class="top mono">HACK · 05<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>Smiley · HackNYU</h3><p>Social wellbeing app built in a weekend at HackNYU.</p>
+      <div class="tags mono"><span class="tag">JavaScript</span><span class="tag">Hackathon</span></div>
+    </a>
+    <a class="card" href="https://github.com/jayesh1302" target="_blank" rel="noopener">
+      <div class="top mono">MORE<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      <h3>More on GitHub</h3><p>Data analysis notebooks, React apps, Java backends and more.</p>
+      <div class="tags mono"><span class="tag">@jayesh1302</span></div>
+    </a>
+  </div>
+  <div class="dots" id="dots" aria-hidden="true"></div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="wrap">
+  <div class="eyebrow mono reveal">04 · Toolkit</div>
+  <h2 class="reveal">What I work with.</h2>
+  <p class="sub reveal">✦ marks what I use day to day.</p>
+  <div class="skills">
+    <div class="sk reveal"><h4 class="mono">AI / LLM</h4><div class="chips">
+      <span class="chip hot">LLM Evals</span><span class="chip hot">AI Agents</span><span class="chip hot">Multi-agent Orchestration</span><span class="chip hot">Tool Calling</span><span class="chip hot">Langfuse</span><span class="chip">Prompt Engineering</span><span class="chip">AI Coding Tools</span><span class="chip">OpenAI</span><span class="chip">ML · LSTM</span></div></div>
+    <div class="sk reveal"><h4 class="mono">Languages</h4><div class="chips">
+      <span class="chip hot">Python</span><span class="chip hot">Java</span><span class="chip">C++</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">SQL</span></div></div>
+    <div class="sk reveal"><h4 class="mono">Backend &amp; Cloud</h4><div class="chips">
+      <span class="chip hot">AWS Lambda</span><span class="chip">Spring Boot</span><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">DynamoDB</span><span class="chip">Kafka</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span></div></div>
+    <div class="sk reveal"><h4 class="mono">Frontend &amp; Data</h4><div class="chips">
+      <span class="chip">React</span><span class="chip">Angular</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">OpenSearch</span><span class="chip">Spark</span></div></div>
+  </div>
+</section>
+
+<!-- ================= RECOGNITION ================= -->
+<section id="kudos" class="wrap">
+  <div class="eyebrow mono reveal">05 · Recognition</div>
+  <h2 class="reveal">What people say.</h2>
+  <div class="awards" style="margin-top:22px">
+    <div class="award reveal"><div class="ai">🏆</div><div><b>High Flyer Award</b><span>Amadeus · quarterly impact</span></div></div>
+    <div class="award reveal"><div class="ai">🥉</div><div><b>Top 3 · SKube Hackathon</b><span>Amadeus · global, cloud microservices</span></div></div>
+    <div class="award reveal"><div class="ai">🚀</div><div><b>Top 10 of 275 · Futurize</b><span>Amadeus · cloud-native scheduling</span></div></div>
+  </div>
+  <div class="rail quotes">
+    <figure class="quote"><p>A hardworking, driven developer who is always learning. His growth over the summer was fun to watch!</p>
+      <figcaption class="who"><b>John McQueen</b>Senior Software Engineer, Southwest Airlines</figcaption></figure>
+    <figure class="quote"><p>Extremely talented and technically very strong. His ability to present complex technical details in simple terms is highly commendable.</p>
+      <figcaption class="who"><b>Sudharsan B.</b>Lead Business Analyst, Amadeus</figcaption></figure>
+    <figure class="quote"><p>Profound technical skills and a thinker's mind. He loves taking on challenges and adapts quickly.</p>
+      <figcaption class="who"><b>Abhi Mahajan</b>Senior Technical BA, Amadeus</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="wrap">
+  <div class="contact reveal">
+    <div>
+      <div class="eyebrow mono">06 · Contact</div>
+      <h2>Let's build something.</h2>
+      <p>Always up for conversations about AI agents, evals and reliable AI systems.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:jayesh1302@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+        <a class="btn" href="https://calendly.com/jayesh1302/bobatalk" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>Book a call</a>
+      </div>
+    </div>
+    <div class="socials">
+      <a class="soc" href="https://www.linkedin.com/in/jayesh1302/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5z"/></svg>LinkedIn</a>
+      <a class="soc" href="https://github.com/jayesh1302" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
+      <a class="soc" href="https://www.instagram.com/unplanned.adventures/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Instagram</a>
+      <a class="soc" href="https://www.facebook.com/jayesh1302/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg>Facebook</a>
+    </div>
+  </div>
+  <footer class="mono"><span>© 2026 Jayesh Kumar</span><span>Hand-built · no frameworks</span></footer>
+</section>
+</main>
+
+<!-- ================= MOBILE TAB BAR ================= -->
+<nav class="tabbar" aria-label="Sections">
+  <a href="#home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+  <a href="#focus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>AI</a>
+  <a href="#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Work</a>
+  <a href="#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>Projects</a>
+  <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Contact</a>
+</nav>
+
+<script src="assets/site/app.js" defer></script>
 </body>
-
 </html>
